@@ -18,11 +18,11 @@
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
 			  
-             <li class="nav-item active"> <!-- (active)でこのページにいるよの強調表示 -->
-                <a class="nav-link" href="#">ホーム画面<span class="sr-only">(current)</span></a>
+             <li class="nav-item"> <!-- (active)でこのページにいるよの強調表示 -->
+                <a class="nav-link" href="./BootstrapTemplete.html">ホーム画面</a>
              </li>
-             <li class="nav-item">
-                <a class="nav-link" href="BootstrapCard.html">カード表示について</a>
+             <li class="nav-item active">
+                <a class="nav-link" href="./BootstrapCard.html">カード表示について<span class="sr-only">(current)</span></a>
              </li>
              <li class="nav-item dropdow">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -32,11 +32,11 @@
                    <a class="dropdown-item" href="https://webnetamemo.com/coding/bootstrap/201511202268">ボタンデザイン(別サイト)</a>
                    <a class="dropdown-item" href="https://qiita.com/akatsuki174/items/53b7367b04ed0b066bbf">参考にしたページとか(別サイト)</a>
                    <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="./HowToUseBootstrap.html">翻訳前ページ</a>
+                   <a class="dropdown-item" href="#">翻訳前ページ</a>
                 </div>
              </li>
              <li class="nav-item">
-                <a class="nav-link disabled" href="#">無効化したリンク</a> <!-- 無効化されてるっぽい表示 -->
+                <a class="nav-link disabled" href="#">無効化っぽい表示</a> <!-- 無効化されてるっぽい表示 -->
              </li>
           </ul>
           <form class="form-inline my-2 my-lg-0" action="https://google.com/search">
@@ -47,73 +47,76 @@
     </nav>
 
     <div class="jumbotron jumbotron-fluid text-center">
-		<p>- このページトップ部分の薄灰色の塗りつぶしは(jumbotron)というclassです -</p>
+		<p>- ボタンについての説明 -</p>
 		<!-- 「Bootstrap ジャンボトロン」とかで検索すると参考になるかも -->
        <h1 class="display-4">Bootstrapチュートリアル</h1>
-       <p class="lead">こんな感じでサブタイトル表示できます</p>
-       <hr class="my-4"><p>↓Bootstrapについての解説ページ(別サイト)</p>
-       <p class="lead"> <!-- このコメントをはずすと中央表示のボタンがズレるよ -->
-          <a class="btn btn-primary btn-lg" href="https://techacademy.jp/magazine/6270" role="button">中央表示のボタン</a>
-		   <!-- btn-primaryは青色ボタンを表示 btn-lgはより大きく(large)する -->
-		   <!-- btn-defaultで白色ボタン、様々ある -->
-       </p>
+       <p class="lead">このページは現在作業中です、ごめんなさい…</p>
 
     </div>
-	  <p>通常は何も指定しないとこのように<br>画面の左揃えになってしまう。(むしろここは消したい)</p>
-	  <p class="text-center">クラスに(text-center)を指定するとこんな感じに中央揃えで表示してくれる<br/><br/>
-	  	  
-	  </p>
-	  <div class="jumbotron"> <!-- 下の要素にはどちらもtext-centerを指定しているが、この行のdivのclassにtext-centerを入れて下のclassを削除でも同じ表示になる -->
-		  <!-- 一つ前のdivと比べてみよう -->
-		  <h4 class="text-center">Tips</h4>
-	  	   <p class="text-center">BootstrapにはColumnという概念がある。
-		  <br>Columnは横の幅のことで、こいつを使うと色々綺麗なWebページが作成できる。見てみよう。
-	  </p>
-	  </div>
 	  
 	  <!-- 以下、containerの中で動くrowとcolに関する説明 -->
     <div class="container">
-       <div class="row text-center">
-          <div class="col-lg-6 offset-lg-3" style="background-color: lightgray">(col-lg-6)というのは column-large-6 の略で、<br><strong>横幅の設定 - PCサイズの時 - 6サイズ分スペースを取る </strong>の意味
-			  <br>Bootstrapでは<strong>この横幅が12スペースになると横幅最大の設定</strong>となる。<br>
-		  largeは画面の大きさがPCのときに適応させる設定。<br>常に幅を6スペース取りたいときは(col-6)で可能。
-			  <br>また、(offset-lg-3)は左側から3スペース分空きを作る。</div>
-       </div>
 		<br/>
-		<p class="text-center">12スペース全体を使って上手くやるとこんな感じ</p>
 	   <div class="row">
           <div class="col-md-4 " style="background: #AAAAAA"> Click here to select this<strong> column.</strong> Always place your content within a column. Columns are indicated by a dashed blue line. </div>
           <div class="col-md-4 " style="background: #CCCCCC"> You can <strong>resize a column</strong> using the handle on the right. Drag it to increase or reduce the number of columns.</div>
           <div class="col-md-4 " style="background: #EEEEEE"> You can <strong>offset a column</strong> using the handle on the left. Drag it to increase or reduce the offset. </div>
        </div>
 		
-       <br/>
-		<p class="text-center">以下、作業中</p>
-       
-		<br/>
-		
-		<div class="row">
-          <div class="col-md-6 text-center">
+       <br>
+       <div class="row">
+          <div class="col-md-4">
              <div class="card">
+                <img class="card-img-top" src="images/card-img.png" alt="Card image cap">
                 <div class="card-body">
-                   <h3>Adding <strong>Buttons</strong></h3>
-                   <p>Quickly add buttons to your page by using the button component in the insert panel. </p>
-                   <button type="button" class="btn btn-info btn-md">Info Button</button>
-                   <button type="button" class="btn btn-success btn-md">Success Button</button>
+                   <h4 class="card-title">Card title</h4>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <br><br>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
              </div>
           </div>
-          <div class="text-center col-md-6">
+          <div class="col-md-4">
              <div class="card">
                 <div class="card-body">
-                   <h3>Adding <strong>Badges</strong></h3>
-                   <p>Using the insert panel, add badge to your page by using the badge component.</p>
-                   <span class="badge badge-info">Info Badge</span> <span class="badge badge-danger">Danger Badge</span>
+                   <h5 class="card-title">Card title</h5>
+                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="card-link">Card link</a>
+                   <a href="#" class="card-link">Another link</a>
+                </div>
+             </div>
+             <br>
+             <br/>
+             <div class="card">
+                <div class="card-header">
+                   Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                   <li class="list-group-item">Cras justo odio</li>
+                   <li class="list-group-item">Dapibus ac facilisis in</li>
+                   <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="card">
+                <img class="card-img-top" src="images/card-img.png" alt="Card image cap">
+                <div class="card-body">
+                   <h5 class="card-title">Card title</h5>
+                   <p class="card-text">Some text to build on the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                   <li class="list-group-item">Cras justo odio</li>
+                   <li class="list-group-item">Dapibus ac facilisis in</li>
+                </ul>
+                <div class="card-body">
+                   <a href="#" class="card-link">Card link</a>
+                   <a href="#" class="card-link">Another link</a>
                 </div>
              </div>
           </div>
        </div>
-		
        <br/>
        <hr/>
        <br/>
@@ -124,13 +127,6 @@
              <p>Copyright &copy; 2015 &middot; All Rights Reserved &middot; <a href="https://google.com/" >Googleへ</a></p>
           </div>
    	   </div>
-		
-		
-       <br>
-		
-		
-	
-		
 	</div>
 	<!-- 以下のscriptは必要な要素 -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
